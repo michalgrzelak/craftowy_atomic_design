@@ -4,7 +4,6 @@ import React from 'react'
 import PageTemplate from '../templates/PageTemplate'
 import Header from '../organisms/Header'
 import Footer from '../organisms/Footer'
-import HeroList from '../containers/HeroList'
 
 const HeroPage = () => {
   return (
@@ -12,7 +11,7 @@ const HeroPage = () => {
       header={<Header />}
       footer={<Footer />}
     >
-      <HeroList />
+      <div>Hero List</div>
     </PageTemplate>
   )
 }
