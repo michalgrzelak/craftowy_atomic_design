@@ -1,7 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import {ifProp} from 'styled-tools'
+import { ifProp } from 'styled-tools'
+
+import Heading from '../atoms/Heading'
+import Link from '../atoms/Link'
+import Paragraph from '../atoms/Paragraph'
+import PreformattedText from '../atoms/PreformattedText'
 import Badge from '../atoms/Badge'
 import Icon from '../atoms/Icon'
 
@@ -31,8 +36,22 @@ const StyledBadge = styled(Badge)`
   right: 1rem;
 `
 
-const Hero = () => {
-  return (<div>HERO</div>)
+const Hero = ({
+  icon, title, link, quote, children, ...props
+}) => {
+  return (
+    <Wrapper {...props}>
+      <StyledIcon icon={icon} width={64} />
+      <Text>
+        <Heading level={2}>
+          <Link href={link}>{title}</Link>
+        </Heading>
+        <Paragraph>{children}</Paragraph>
+        <PreformattedText block>{quote}</PreformattedText>
+      </Text>
+      {props.dead && <StyledBadge palette="grayscale">dead</StyledBadge>}
+    </Wrapper>
+  )
 }
 
 Hero.propTypes = {
