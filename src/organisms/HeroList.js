@@ -40,10 +40,50 @@ const HeroList = ({heroList}) => {
                 <Link href="https://batman.fandom.com/wiki/Gotham_City">Learn more about Gotham</Link>
             </Description>
             <Grid>
-                <div>HERO</div>
-                <div>HERO</div>
-                <div>HERO</div>
-                <div>HERO</div>
+                <StyledHero
+                    icon={"batman"}
+                    link={"https://dc.fandom.com/wiki/Batman_(Bruce_Wayne)"}
+                    title={"Batman"}
+                    quote={"Because I'm Batman"}
+                    dead={false}
+                >
+                    Batman is the superhero protector of Gotham City, a man dressed like a bat who fights against evil
+                    and
+                    strikes terror into the hearts of criminals everywhere.
+                </StyledHero>
+                <StyledHero
+                    icon={"batman"}
+                    link={"https://dc.fandom.com/wiki/Batman_(Bruce_Wayne)"}
+                    title={"Batman"}
+                    quote={"Because I'm Batman"}
+                    dead={false}
+                >
+                    Batman is the superhero protector of Gotham City, a man dressed like a bat who fights against evil
+                    and
+                    strikes terror into the hearts of criminals everywhere.
+                </StyledHero>
+                <StyledHero
+                    icon={"batman"}
+                    link={"https://dc.fandom.com/wiki/Batman_(Bruce_Wayne)"}
+                    title={"Batman"}
+                    quote={"Because I'm Batman"}
+                    dead={false}
+                >
+                    Batman is the superhero protector of Gotham City, a man dressed like a bat who fights against evil
+                    and
+                    strikes terror into the hearts of criminals everywhere.
+                </StyledHero>
+                <StyledHero
+                    icon={"batman"}
+                    link={"https://dc.fandom.com/wiki/Batman_(Bruce_Wayne)"}
+                    title={"Batman"}
+                    quote={"Because I'm Batman"}
+                    dead={false}
+                >
+                    Batman is the superhero protector of Gotham City, a man dressed like a bat who fights against evil
+                    and
+                    strikes terror into the hearts of criminals everywhere.
+                </StyledHero>
             </Grid>
         </div>
     )
