@@ -41,13 +41,13 @@ const Hero = ({
 }) => {
   return (
     <Wrapper {...props}>
-      {icon && <StyledIcon icon={icon} width={64} />}
+      <StyledIcon icon={icon} width={64} />
       <Text>
         <Heading level={2}>
-          {link ? <Link href={link}>{title}</Link> : title}
+          <Link href={link}>{title}</Link>
         </Heading>
         <Paragraph>{children}</Paragraph>
-        {quote && <PreformattedText block>{quote}</PreformattedText>}
+        <PreformattedText block>{quote}</PreformattedText>
       </Text>
       {props.dead && <StyledBadge palette="grayscale">dead</StyledBadge>}
     </Wrapper>
@@ -56,9 +56,9 @@ const Hero = ({
 
 Hero.propTypes = {
   title: PropTypes.string.isRequired,
-  icon: PropTypes.string,
-  link: PropTypes.string,
-  dead: PropTypes.bool,
+  icon: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  dead: PropTypes.bool.isRequired,
   children: PropTypes.any,
   quote: PropTypes.node,
 }
