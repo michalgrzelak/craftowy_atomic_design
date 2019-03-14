@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   display: flex;
   padding: 1rem;
   box-sizing: border-box;
-  opacity: ${ifProp('soon', 0.4, 1)};
+  opacity: ${ifProp('dead', 0.4, 1)};
   @media screen and (max-width: 640px) {
     padding: 0.5rem;
   }
@@ -47,7 +47,7 @@ const StyledBadge = styled(Badge)`
 `
 
 const Hero = ({
-  icon, title, link, code, children, ...props
+  icon, title, link, quote, children, ...props
 }) => {
   return (
     <Wrapper {...props}>
@@ -57,9 +57,9 @@ const Hero = ({
           {link ? <Link href={link}>{title}</Link> : title}
         </Heading>
         <Paragraph>{children}</Paragraph>
-        {code && <PreformattedText block>{code}</PreformattedText>}
+        {quote && <PreformattedText block>{quote}</PreformattedText>}
       </Text>
-      {props.soon && <StyledBadge palette="grayscale">soon</StyledBadge>}
+      {props.dead && <StyledBadge palette="grayscale">dead</StyledBadge>}
     </Wrapper>
   )
 }
@@ -68,9 +68,9 @@ Hero.propTypes = {
   title: PropTypes.string.isRequired,
   icon: PropTypes.string,
   link: PropTypes.string,
-  soon: PropTypes.bool,
+  dead: PropTypes.bool,
   children: PropTypes.any,
-  code: PropTypes.node,
+  quote: PropTypes.node,
 }
 
 export default Hero

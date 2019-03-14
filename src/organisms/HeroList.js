@@ -49,7 +49,7 @@ const HeroList = ({ ...props }) => (
         icon="batman"
         link="https://dc.fandom.com/wiki/Batman_(Bruce_Wayne)"
         title="Batman"
-        code="Because I'm Batman"
+        quote="Because I'm Batman"
       >
         Batman is the superhero protector of Gotham City, a man dressed like a bat who fights against evil and strikes
         terror into the hearts of criminals everywhere.
@@ -58,7 +58,7 @@ const HeroList = ({ ...props }) => (
         icon="joker"
         link="https://dc.fandom.com/wiki/Joker_(New_Earth)"
         title="Joker"
-        code="Have you ever danced with the devil in the pale moonlight?"
+        quote="Have you ever danced with the devil in the pale moonlight?"
       >
         The Joker is a homicidal maniac and the archenemy of Batman. His real name and origin are unknown, but one of
         the most common versions indicates that he fell into a vat of chemicals which turned his skin white and his hair
@@ -68,17 +68,17 @@ const HeroList = ({ ...props }) => (
         icon="nightwing"
         link="https://dc.fandom.com/wiki/Richard_Grayson_(New_Earth)"
         title="Nightwing"
-        code=" I've seen too much to be Robin, but I'm still too optimistic to be Batman. I'm Nightwing."
+        quote=" I've seen too much to be Robin, but I'm still too optimistic to be Batman. I'm Nightwing."
       >
-        <Link href="https://dc.fandom.com/wiki/Richard_Grayson_(New_Earth)">Dick Grayson</Link> is a vigilante in the
-        Batman Family and the original hero known as Robin. Eventually, he outgrew this position and was inspired by
-        Superman to become Nightwing, while Jason Todd and Tim Drake succeeded him as Robin.
+        Dick Greyson is a vigilante in the Batman Family and the original hero known as Robin. Eventually, he outgrew
+        this position and was inspired by Superman to become Nightwing, while Jason Todd and Tim Drake succeeded him as Robin.
       </StyledHero>
       <StyledHero
         icon="penguin"
         link="https://dc.fandom.com/wiki/Oswald_Cobblepot_(New_Earth)"
         title="Penguin"
-        code="Just the pussy i've been lookin' for'"
+        quote="Just the pussy i've been lookin' for'"
+        dead={true}
       >
         The Penguin is a fancy criminal and self-styled entrepreneur, who uses his business as a front to cover his
         criminal activities. Penguin started as many criminals in Gotham City, by performing crimes with a specific
