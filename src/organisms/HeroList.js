@@ -10,9 +10,6 @@ const Grid = styled.div`
   flex-flow: row wrap;
   > * {
     width: calc(50% - 2rem);
-    @media screen and (max-width: 640px) {
-      width: 100%;
-    }
   }
 `
 
@@ -23,16 +20,10 @@ const StyledHeading = styled(Heading)`
 const Description = styled(Paragraph)`
   text-align: center;
   margin: 2rem;
-  @media screen and (max-width: 640px) {
-    margin: 1rem;
-  }
 `
 
 const StyledHero = styled(Hero)`
   margin: 1rem;
-  @media screen and (max-width: 640px) {
-    margin: 0;
-  }
 `
 
 const HeroList = ({heroList}) => {
