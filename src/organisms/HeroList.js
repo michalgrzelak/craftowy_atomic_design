@@ -40,50 +40,18 @@ const HeroList = ({heroList}) => {
                 <Link href="https://batman.fandom.com/wiki/Gotham_City">Learn more about Gotham</Link>
             </Description>
             <Grid>
-                <StyledHero
-                    icon={"batman"}
-                    link={"https://dc.fandom.com/wiki/Batman_(Bruce_Wayne)"}
-                    title={"Batman"}
-                    quote={"Because I'm Batman"}
-                    dead={false}
-                >
-                    Batman is the superhero protector of Gotham City, a man dressed like a bat who fights against evil
-                    and
-                    strikes terror into the hearts of criminals everywhere.
-                </StyledHero>
-                <StyledHero
-                    icon={"batman"}
-                    link={"https://dc.fandom.com/wiki/Batman_(Bruce_Wayne)"}
-                    title={"Batman"}
-                    quote={"Because I'm Batman"}
-                    dead={false}
-                >
-                    Batman is the superhero protector of Gotham City, a man dressed like a bat who fights against evil
-                    and
-                    strikes terror into the hearts of criminals everywhere.
-                </StyledHero>
-                <StyledHero
-                    icon={"batman"}
-                    link={"https://dc.fandom.com/wiki/Batman_(Bruce_Wayne)"}
-                    title={"Batman"}
-                    quote={"Because I'm Batman"}
-                    dead={false}
-                >
-                    Batman is the superhero protector of Gotham City, a man dressed like a bat who fights against evil
-                    and
-                    strikes terror into the hearts of criminals everywhere.
-                </StyledHero>
-                <StyledHero
-                    icon={"batman"}
-                    link={"https://dc.fandom.com/wiki/Batman_(Bruce_Wayne)"}
-                    title={"Batman"}
-                    quote={"Because I'm Batman"}
-                    dead={false}
-                >
-                    Batman is the superhero protector of Gotham City, a man dressed like a bat who fights against evil
-                    and
-                    strikes terror into the hearts of criminals everywhere.
-                </StyledHero>
+                {
+                    heroList.map(({icon, link, title, quote, dead, description}) => (
+                        <StyledHero
+                            icon={icon}
+                            link={link}
+                            title={title}
+                            quote={quote}
+                            dead={dead}
+                        >
+                            {description}
+                        </StyledHero>
+                    ))}
             </Grid>
         </div>
     )
