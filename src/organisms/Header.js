@@ -4,7 +4,6 @@ import { size } from 'styled-theme'
 
 import Block from '../atoms/Block'
 import PrimaryNavigation from '../molecules/PrimaryNavigation'
-import IconLink from '../molecules/IconLink'
 
 const Wrapper = styled(Block)`
   display: flex;
@@ -33,7 +32,6 @@ const Header = (props) => {
   return (
     <Wrapper opaque reverse {...props}>
       <InnerWrapper>
-        <IconLink to="/" icon="batman-logo" height={100} />
         <StyledPrimaryNavigation reverse />
       </InnerWrapper>
     </Wrapper>
